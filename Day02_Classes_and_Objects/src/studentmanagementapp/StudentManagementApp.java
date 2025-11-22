@@ -5,7 +5,7 @@ public class StudentManagementApp {
 
 	public static void main(String[] args) {
 		//Create a reference of Student type.
-		Student s;
+		//Student s;
 		
 		//object creation and assigning to reference variable
 		//System.out.println(s);//ERROR value not initialized
@@ -50,13 +50,13 @@ public class StudentManagementApp {
 				System.out.println("Enter marks: ");
 				marks = sc.nextFloat();
 				s1 = new Student(name, marks);
-				System.out.println("Employee registered successfully.");
+				System.out.println("Student registered successfully.");
 				break;
 			case 2:
 				if(s1 != null) s1.display("=");
 				break;
 			}
 		} while(choice != 0);
+		sc.close();
 	}
-
 }
