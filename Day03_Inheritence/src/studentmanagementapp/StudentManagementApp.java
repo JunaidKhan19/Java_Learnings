@@ -29,7 +29,7 @@ public class StudentManagementApp {
 				break;
 			}
 		} while(choice != 0);
-		
+		sc.close();
 		
 	}
 

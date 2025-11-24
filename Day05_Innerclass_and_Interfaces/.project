@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Day04_Arrays_Strings_Enums</name>
+	<name>Day05_Innerclass_and_Interfaces</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1763965273668</id>
+			<id>1763965273678</id>
 			<name></name>
 			<type>30</type>
 			<matcher>

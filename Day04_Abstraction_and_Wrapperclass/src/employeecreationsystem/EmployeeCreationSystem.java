@@ -45,5 +45,6 @@ public class EmployeeCreationSystem {
 				break;
 			}
 		} while(choice != 0);
+		sc.close();
 	}
 }
