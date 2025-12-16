@@ -1,0 +1,40 @@
+-> Issues with manual new Thread():
+		 * Creates 9 new threads consumed lots of cpu resources → expensive
+		 * Threads are not reused
+		 * Scheduling overhead is high
+		 * Context switching increases total time
+		 * Not scalable for real systems
+
+-> Executors : this is a utility class that provides various methods for ExecutorService, ScheduledExecutorService, Callable, etc.
+
+-> ExecutorService : Executor that provides methods to manage termination and methods that can produce a Future for 
+tracking progress of one or more asynchronous tasks.
+
+->Executors.newFixedThreadPool(3) : this method makes a fixed size threadpool eg.- 3 threads
+
+-> Future in executor service can:
+		 * Future lets you:
+		 * return the computation value 
+		 * wait for any computation 
+		 * help to know if task was successfull.
+		 * get() result
+		 * isDone() check
+		 * detect exceptions
+		 * cancellation (future.cancel())
+		 * Note : Future DOES NOT SUPPORT COMPLETION CALLBACKS
+		 * For that Java uses CompletableFuture.
+
+-> ScheduledExecutorService and ScheduledFuture:
+	- Scheduling Methods = How the task should run
+		 * once?
+		 * repeatedly at fixed rate?
+		 * repeatedly with delay?
+	- ScheduledFuture = Control object for the task
+		 * get result (only for schedule-Callable)
+		 * get remaining delay
+		 * cancel repeating tasks
+		 * check status
+
+->Executors.newCachedThreadPool() : this threadpool makes new threads as per usage. If a thread is inactive for 60 seconds, it is terminated.
+Using this is simple as we use the fixed threadpool. 
+It has a risk as we dont define the number of threads or limit of threads. 
