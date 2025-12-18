@@ -14,7 +14,6 @@ public class StudentManagementApp {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		int indexCount = 0;
 		String name;
 		float marks;
 		int choice;	
@@ -121,6 +120,7 @@ public class StudentManagementApp {
 				break;
 			}
 		} while(choice != 0);
+		sc.close();
 
 	}
 
